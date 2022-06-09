@@ -1,11 +1,9 @@
 @import url(fontawesome-all.min.css);
-
 /*
 	Hyperspace by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
-
 html,
 body,
 div,
@@ -2904,7 +2902,7 @@ ul.actions.fit.stacked {
 	ul.actions:not(.fixed) li .button.icon:before {
 		margin-left: -0.5rem;
 	}
-	
+
 
 }
 
@@ -4050,6 +4048,7 @@ body.is-preload #sidebar nav ul li {
 		display: none;
 
 	}
+
 	#especial .linea {
 		display: none;
 	}
@@ -4070,12 +4069,12 @@ button,
 	-ms-transition: border-color 0.2s ease;
 	transition: border-color 0.2s ease;
 	background-color: transparent;
-	
+
 	border-radius: 3em;
 	color: #ffffff !important;
 	cursor: pointer;
 	display: inline-block;
-	font-size: 0.6em;	
+	font-size: 0.6em;
 	font-weight: bold;
 	height: calc(4.em + 2px);
 	letter-spacing: 0.25em;
@@ -4103,7 +4102,7 @@ button:after,
 	-webkit-transition: opacity 0.2s ease, -webkit-transform 0.2s ease;
 	-ms-transition: opacity 0.2s ease, -ms-transform 0.2s ease;
 	transition: opacity 0.2s ease, transform 0.2s ease;
-	
+
 	background: #ffffff;
 	border-radius: 40%;
 	content: '';
@@ -4170,7 +4169,7 @@ input[type="reset"].disabled,
 input[type="reset"]:disabled,
 input[type="button"].disabled,
 input[type="button"]:disabled,
-button.disabled,
+.buttonEspecial.disabled,
 button:disabled,
 .buttonEspecial.disabled,
 .buttonEspecial:disabled {
@@ -4187,35 +4186,19 @@ button:hover,
 	border-color: rgba(255, 255, 255, 0.55) !important;
 }
 
-input[type="submit"]:hover:after,
-input[type="reset"]:hover:after,
-input[type="button"]:hover:after,
-button:hover:after,
+
 .buttonEspecial:hover:after {
 	opacity: 0.05;
-	-moz-transform: scale(1);
-	-webkit-transform: scale(1);
-	-ms-transform: scale(1);
-	transform: scale(1);
+	transform: scale(1);	
 }
 
-input[type="submit"]:hover:active,
-input[type="reset"]:hover:active,
-input[type="button"]:hover:active,
-button:hover:active,
-.buttonEspecial:hover:active {
-	border-color: #ffffff !important;
-}
 
-input[type="submit"]:hover:active:after,
-input[type="reset"]:hover:active:after,
-input[type="button"]:hover:active:after,
-button:hover:active:after,
-.buttonEspecial:hover:active:after {
-	opacity: 0.1;
-}
-
-.linea{
+.linea {
 	margin-top: 5px;
 	color: #ffffff !important;
+}
+
+#video {
+	margin-top: 5px;
+	text-align: center !important;
 }
