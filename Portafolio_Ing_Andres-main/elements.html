@@ -1,0 +1,220 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Portafolio Andrés</title>
+	<meta charset="utf-8" />
+	<link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3160/3160577.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+
+	<!-- Header -->
+	<header id="header">
+		<nav style="position: absolute;">
+			<ul id="especial">
+				<li><a class="buttonEspecial" href="index.html">Portafolio </a></li>
+				<li class="linea">></li>
+				<li><a class="buttonEspecial" href="index.html#one">Mis Proyectos</a></li>
+				<li class="linea">></li>
+				<li><a class="buttonEspecial" href="generic.html"> Streams For Labs</a></li>
+			</ul>
+		</nav>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="generic.html">Descripción</a></li>
+				<li><a href="elements.html" class="active">Documentación</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Main -->
+		<section id="main" class="wrapper">
+			<div class="inner">
+				<h1 class="major"><span style="color:#FF1493">STREAM FOR LABS: </span>Sistema para compartir archivos
+					(NASS)</h1>
+
+				<!-- Text -->
+				<section>
+					<h2>Arquitectura</h2>
+					<p style="text-align: justify;">Basado en los requerimientos del proyecto y los diferentes servicios
+						que este debe tener,
+						se planteó la siguiente arquitectura, la cual está dividida en dos partes.
+						<br><br>
+						Podemos visualizar en las siguientes figuras, en las cuales se quiere
+						explicar que existen aplicaciones clientes, sea un navegador web o servicio de sincronización
+						que consumirán una serie de servicios que estarán contenerizados con Docker, esto se hizo para
+						distribuir los servicios necesitados y de esta forma para la aplicación cliente el backend sea
+						transparente, es decir, conoce que existe, pero no como funciona.
+					</p>
+					<div style="text-align: center;">
+						<img style="width: 70%;"
+							src="https://camo.githubusercontent.com/dd64a817123c71c49877af2438f6d63fb4291bfb3295599d70698f2e7406a635/68747470733a2f2f666972656261736573746f726167652e676f6f676c65617069732e636f6d2f76302f622f696e676465697665722e61707073706f742e636f6d2f6f2f706f727461666f6c696f253246696d6167656e657325324653747265616d73253230666f726d2532306c61622532306172632d312e6a70673f616c743d6d6564696126746f6b656e3d33613538363766622d653132652d343465392d613331392d363863323638316139663762">
+					</div>
+					<div style="text-align: center;">
+						<img style="width: 70%;"
+							src="https://camo.githubusercontent.com/ab8bf62ae219ce5eaba70aa8ecb2db0376a8c7ff3e564a52aef0cf40915610be/68747470733a2f2f666972656261736573746f726167652e676f6f676c65617069732e636f6d2f76302f622f696e676465697665722e61707073706f742e636f6d2f6f2f706f727461666f6c696f253246696d6167656e657325324653747265616d73253230666f726d2532306c61622532306172632d322e6a70673f616c743d6d6564696126746f6b656e3d36383332653335382d346439652d343463642d383264342d366161376138643737643130">
+					</div>
+					<br>
+					<p>A continuación se presentarán los distintos servicios brindados por la aplicación web.</p>
+					<hr />
+					<h2>Sesiones de la aplicación web</h2>
+					<hr>
+					<h3>Login</h3>
+					<p style="text-align: justify;">El login el cual está compuesto por uno sección para usuarios
+						normales y usuarios
+						administradores, este es el punto de entrada a la aplicación, esta está protegida con
+						un captchat y se expresan las condiciones de uso de la aplicación que el usuario debe aceptar
+						para poder continuar.</p>
+					<h4 style="text-align: center;">Login Usuario Administrador</h4>
+
+					<div style=" text-align: center;">
+						<img style="width: 70%;"
+							src="https://camo.githubusercontent.com/2af3f063a89916aff5d1b80122b8663174116adbeb7802b7c5d253babc1b3093/68747470733a2f2f666972656261736573746f726167652e676f6f676c65617069732e636f6d2f76302f622f66696c65732d736572766963652e61707073706f742e636f6d2f6f2f696d616765732532464c6f67696e25323061646d696e2e706e673f616c743d6d6564696126746f6b656e3d30366639336630362d393163362d343137312d383466322d666362666362636161336531">
+					</div>
+					<h4 style="text-align: center;">Login Usuarios Normales</h4>
+
+					<div style="text-align: center;">
+						<img
+							src="https://camo.githubusercontent.com/badb36a2bd601290244e356f8e71a8d98269ea87e74a4311f46bdcf1618ef867/68747470733a2f2f666972656261736573746f726167652e676f6f676c65617069732e636f6d2f76302f622f66696c65732d736572766963652e61707073706f742e636f6d2f6f2f696d616765732532466c6f67696e2e706e673f616c743d6d6564696126746f6b656e3d39613461316338382d653030312d346431352d396661622d653861633664386431626464">
+					</div>
+					<hr>
+					<h3>Files</h3>
+					<p style="text-align: justify;">Esta sección es considera el home del usuario, el cual contiene tres
+						directorios: videos, photos y files, en dichos directorios se almacenarán los archivos con la
+						extensión correspondiente.</p>
+					<div style=" text-align: center;">
+						<img style="width: 70%;"
+							src="https://camo.githubusercontent.com/f11b2382d6530a29db07ca133435280da7ef06756028e84b194dd0d83aeee8a2/68747470733a2f2f666972656261736573746f726167652e676f6f676c65617069732e636f6d2f76302f622f66696c65732d736572766963652e61707073706f742e636f6d2f6f2f696d6167657325324666696c65732e706e673f616c743d6d6564696126746f6b656e3d63653366646132632d326563382d343864372d383462342d663931646161623936303464">
+					</div>
+					<hr>
+					<h3>Photo</h3>
+					<p style="text-align: justify;">En este apartado el usuario podrá visualizar las imagenes que ha
+						subido. Se realizó un
+						ordenamiento por medio de una función Sort() para que el usuario pueda ordenar las imagenes por
+						nombre o por fecha.
+					</p>
+					<div style=" text-align: center;">
+						<img style="width: 70%;"
+							src="https://camo.githubusercontent.com/fa61b32b6de40dbe3bd3258702e47bd4d11f4559fa289b476a9b1a2d1ed9e018/68747470733a2f2f666972656261736573746f726167652e676f6f676c65617069732e636f6d2f76302f622f66696c65732d736572766963652e61707073706f742e636f6d2f6f2f696d6167657325324650686f746f732e706e673f616c743d6d6564696126746f6b656e3d61363166373037332d653438352d346631652d626537622d376666626338313566373832">
+					</div>
+					<br>
+					<p>Adicionalmente, el usuario puede presentar las imagenes, hacer zoom, eliminar una imagen, entre
+						otras funcionalidades del servicio.</p>
+					<hr>
+					<h3>Video</h3>
+					<p style="text-align: justify;">La interfaz de archivos de video está conformada por un reproductor
+						de video por streaming y una
+						lista de los diferentes archivos de video disponibles del usuario. En caso de que el usuario no
+						posea archivos de video podrá ver solamente el encabezado de la lista con un texto indicando que
+						puede subir archivos.
+
+						Al reproducir un archivo se podrá visualizar el nombre del archivo y la fecha de actualización,
+						además, en la lista se puede ver el tamaño del archivo y se tiene la opción de compartir y
+						descargar los archivos.
+					</p>
+					<div style=" text-align: center;">
+						<img style="width: 70%;"
+							src="https://camo.githubusercontent.com/879fe9ed0ab8a96606170bd07b51bc40f27d96d1a172b3a6cbf1d8f1a7bbb646/68747470733a2f2f666972656261736573746f726167652e676f6f676c65617069732e636f6d2f76302f622f66696c65732d736572766963652e61707073706f742e636f6d2f6f2f696d61676573253246566964656f732e706e673f616c743d6d6564696126746f6b656e3d39383462653864342d306338362d343164662d623834322d306530356366346666323966">
+					</div>
+					<br>
+					<p style="text-align: justify;">Para el streaming nos basamos en el estándar definido en el "RFC
+						7223", la
+						cual trata  el header Range, esta cabecera le indica al servidor que requiere de un trozo de
+						información, más conocido como un pedazo o stream para ir reproduciendo el video con la
+						información entrante.</p>
+					<hr>
+					<h3>Shared</h3>
+					<p style="text-align: justify;">Con el fin de compartir archivos con otros usuarios se desarrolló
+						una vista “Modal”, de esta
+						manera se podrá acceder mediante un filtro al usuario al que se quiera conceder
+						acceso aun archivo. Al concceder acceso, otro usuario determinado podrá visualizar el archivo
+						seleccionado. <br><br>
+
+						El usuario podrá ver con quien ha compartido el archivo y su fecha.
+					</p>
+					<hr>
+					<h3>Adminstration</h3>
+					<p style="text-align: justify;">Esta sección es la encargada de agrupar las opciones de
+						configuración de un usuario
+						administrador.
+
+
+						El administrador puede elegir un valor que indica la capacidad de almacenamiento que tendrán los
+						usuarios disponibles, este valor se encuentra limitado por un valor máximo y mínimo definido.
+					</p>
+					<div style=" text-align: center;">
+						<img style="width: 70%;"
+							src="https://camo.githubusercontent.com/5757ca04c6aab05788efaa2c6b9dbbc01ebcf3476ab31a50ac282362ed2fdbd9/68747470733a2f2f666972656261736573746f726167652e676f6f676c65617069732e636f6d2f76302f622f66696c65732d736572766963652e61707073706f742e636f6d2f6f2f696d6167657325324661646d696e69757374726174696f6e2e706e673f616c743d6d6564696126746f6b656e3d32643835393461642d303364352d343033382d393834392d383839653939316335383535">
+					</div>
+					<hr>
+					<h3>Synchronization</h3>
+					<p style="text-align: justify;">Para implementar la funcionalidad de sincronización es necesario que
+						la aplicación cliente pueda
+						acceder al sistema de archivos, por lo mismo se necesita una aplicación nativa.
+
+						Basado en lo anterior, usamos electrón para correr la aplicación en Windows y Linux, cuando el
+						usuario se encuentra en la aplicación web se le pide descargar la aplicación nativa para la
+						plataforma respectiva.
+					</p>
+					<p style="text-align: justify;">Una vez el usuario descargue la aplicación nativa y entre en la
+						sección de sincronización se le
+						pedirá que sincronice un directorio. Cuando el usuario seleccione el directorio la
+						sincronización
+						se inicia utilizando SFC y puede detenerla cuando quiera. También se detiene
+						cuando pierde la conexión a internet y se reanuda cuando vuelve a estar conectado. </p>
+					<p style="text-align: justify;">Una vez sincronizado el directorio los archivos que agregue y
+						elimine se reflejaran en el home
+						y se lanzara un mensaje indicando la acción. </p>
+					<div style=" text-align: center;">
+						<img style="width: 50%;" src="images/SFLSYNC.PNG">
+					</div>
+					<hr>
+					<h2 style="color:#FF1493;">Visita mi proyecto: <a style="color: white;"
+							href="https://github.com/ApidriuC/Servicio_Stream_For_Labs_Web_Client">Repositorio en
+							GitHub</a>
+
+					</h2>
+					<h2 style="color:#FF1493;">Video del proyecto: <a style="color: white;"
+							href="https://www.youtube.com/watch?v=dOE3WwnJoHI&ab_channel=DeiverGuerraCarrascal">Enlace a
+							Youtube</a>
+					</h2>
+
+				</section>
+		</section>
+
+		<!-- Footer -->
+		<footer id="footer" class="wrapper alt">
+			<div class="inner">
+				<ul class="menu">
+					<li>&copy; Portafolio. All rights reserved.</li>
+					<li>Design: <a href="https://github.com/ApidriuC">Andrés Felipe Londoño Campos</a></li>
+				</ul>
+			</div>
+		</footer>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+</body>
+
+</html>
