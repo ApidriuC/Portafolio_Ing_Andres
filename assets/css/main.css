@@ -2904,6 +2904,7 @@ ul.actions.fit.stacked {
 	ul.actions:not(.fixed) li .button.icon:before {
 		margin-left: -0.5rem;
 	}
+	
 
 }
 
@@ -4036,4 +4037,185 @@ body.is-preload #sidebar nav ul li {
 
 }
 
+#navegacion {
+	color: white;
+}
 
+
+/*ButtonEspecial*/
+
+@media screen and (max-width: 930px) {
+
+	#especial .buttonEspecial {
+		display: none;
+
+	}
+	#especial .linea {
+		display: none;
+	}
+
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button,
+.buttonEspecial {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+	-moz-transition: border-color 0.2s ease;
+	-webkit-transition: border-color 0.2s ease;
+	-ms-transition: border-color 0.2s ease;
+	transition: border-color 0.2s ease;
+	background-color: transparent;
+	
+	border-radius: 3em;
+	color: #ffffff !important;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 0.6em;	
+	font-weight: bold;
+	height: calc(4.em + 2px);
+	letter-spacing: 0.25em;
+	line-height: 4.em;
+	outline: 0;
+	padding: 0;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	white-space: nowrap;
+}
+
+input[type="submit"]:after,
+input[type="reset"]:after,
+input[type="button"]:after,
+button:after,
+.buttonEspecial:after {
+	-moz-transform: scale(0.25);
+	-webkit-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	transform: scale(0.25);
+	pointer-events: none;
+	-moz-transition: opacity 0.2s ease, -moz-transform 0.2s ease;
+	-webkit-transition: opacity 0.2s ease, -webkit-transform 0.2s ease;
+	-ms-transition: opacity 0.2s ease, -ms-transform 0.2s ease;
+	transition: opacity 0.2s ease, transform 0.2s ease;
+	
+	background: #ffffff;
+	border-radius: 40%;
+	content: '';
+	height: 100%;
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+input[type="submit"].icon:before,
+input[type="reset"].icon:before,
+input[type="button"].icon:before,
+button.icon:before,
+.buttonEspecial.icon:before {
+	margin-right: 0.75em;
+}
+
+input[type="submit"].fit,
+input[type="reset"].fit,
+input[type="button"].fit,
+button.fit,
+.buttonEspecial.fit {
+	width: 100%;
+}
+
+input[type="submit"].small,
+input[type="reset"].small,
+input[type="button"].small,
+button.small,
+.buttonEspecial.small {
+	font-size: 0.4em;
+}
+
+input[type="submit"].large,
+input[type="reset"].large,
+input[type="button"].large,
+button.large,
+.buttonEspecial.large {
+	font-size: 0.8em;
+}
+
+input[type="submit"].primary,
+input[type="reset"].primary,
+input[type="button"].primary,
+button.primary,
+.buttonEspecial.primary {
+	background-color: #ffffff;
+	color: #312450 !important;
+}
+
+input[type="submit"].primary:after,
+input[type="reset"].primary:after,
+input[type="button"].primary:after,
+button.primary:after,
+.buttonEspecial.primary:after {
+	display: none;
+}
+
+input[type="submit"].disabled,
+input[type="submit"]:disabled,
+input[type="reset"].disabled,
+input[type="reset"]:disabled,
+input[type="button"].disabled,
+input[type="button"]:disabled,
+button.disabled,
+button:disabled,
+.buttonEspecial.disabled,
+.buttonEspecial:disabled {
+	cursor: default;
+	opacity: 0.5;
+	pointer-events: none;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+button:hover,
+.buttonEspecial:hover {
+	border-color: rgba(255, 255, 255, 0.55) !important;
+}
+
+input[type="submit"]:hover:after,
+input[type="reset"]:hover:after,
+input[type="button"]:hover:after,
+button:hover:after,
+.buttonEspecial:hover:after {
+	opacity: 0.05;
+	-moz-transform: scale(1);
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+}
+
+input[type="submit"]:hover:active,
+input[type="reset"]:hover:active,
+input[type="button"]:hover:active,
+button:hover:active,
+.buttonEspecial:hover:active {
+	border-color: #ffffff !important;
+}
+
+input[type="submit"]:hover:active:after,
+input[type="reset"]:hover:active:after,
+input[type="button"]:hover:active:after,
+button:hover:active:after,
+.buttonEspecial:hover:active:after {
+	opacity: 0.1;
+}
+
+.linea{
+	margin-top: 5px;
+	color: #ffffff !important;
+}
