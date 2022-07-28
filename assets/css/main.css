@@ -175,6 +175,13 @@ body {
 	}
 
 }
+@media screen and (max-width: 500px) {
+
+	.container_Icons_Header{
+		padding: 0px 90px 0 90px;
+	}
+
+}
 
 html {
 	box-sizing: border-box;
