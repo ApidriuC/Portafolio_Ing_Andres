@@ -4225,3 +4225,11 @@ button:hover,
 	margin-top: 5px;
 	text-align: center !important;
 }
+.disableExpandir{
+	
+	height: 225px;
+}
+.enableExpandir{
+	
+	height: auto;
+}
