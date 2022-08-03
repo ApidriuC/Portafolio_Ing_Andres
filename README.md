@@ -1,6 +1,8 @@
 <h1 align="center"> PORTAFOLIO </h1>
 
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/c59ef0db-1d79-4f6f-a5a3-7386bdd345bd/deploy-status)](https://app.netlify.com/sites/portafolio-andres-londono/deploys) - [Portafolio Web Link](https://portafolio-andres-londono.netlify.app/) 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c59ef0db-1d79-4f6f-a5a3-7386bdd345bd/deploy-status)](https://app.netlify.com/sites/portafolio-andres-londono/deploys) - [Portafolio Web Link](https://portafolio-andres-londono.netlify.app/) Netlify Host 
+
+[Portafolio Web Link](https://apidriuc.github.io/Portafolio_Ing_Andres/) GitHub Host 
 
 ![Part 1](https://github.com/ApidriuC/Portafolio_Ing_Andres/blob/main/images/Captura.PNG)
