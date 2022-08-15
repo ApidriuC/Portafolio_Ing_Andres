@@ -18,6 +18,7 @@
 	<section id="sidebar">
 		<div class="inner">
 			<nav>
+				<div id="content-Lottie1"></div>
 				<ul>
 					<li><a href="#intro">¿Quién Soy?</a></li>
 					<li><a href="#one">Mis Proyectos</a></li>
@@ -30,14 +31,11 @@
 
 	<!-- Wrapper -->
 	<div id="wrapper">
-
 		<!-- Intro -->
 		<section id="intro" class="wrapper style1 fullscreen fade-up">
 			<div class="inner">
-
 				<h1 style="text-align: center;">👋 Hola, Soy Andrés, un <span style="color:#FF1493">FullStack
 						Developer</span>
-
 				</h1>
 				<section id="textHeader">
 					<p style="text-align: center; font-size: 1em;">“Programa siempre tu código como si el tipo que va a
@@ -139,7 +137,7 @@
 				<p style="text-align: justify;">
 					Espero disfrutes del contenido que he preparado, cualquier cosa que necesites házmelo saber por
 					si puedo ayudarte.
-				</p>
+				</p>				
 				<p style="text-align: center;">
 					<a style="border: 0;" href="https://github.com/ApidriuC">
 						<img loading="lazy" src="https://distreau.com/github.svg" height="50">
@@ -158,7 +156,7 @@
 							src="https://logodownload.org/wp-content/uploads/2017/11/discord-logo-4-1.png" height="50">
 						&nbsp;&nbsp;
 					</a>
-				</p>
+				</p>				
 				</p>
 		</section>
 
@@ -459,6 +457,17 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+	<script src="assets/js/LottieComponent/LottieComponent.js"></script>
+	<script src="assets/js/LottieComponent/LottieLicense.js"></script>
+	<script>
+		let Component = new LottieClass({
+			HostDiv: '#content-Lottie1',
+			lottieSrc: 'assets/js/LottieComponent/animations/user-animation.json',
+			lottieSpeed: '1',
+			lottieLoop: true,
+		});
+		Component.generarLottie();
+	</script>
 </body>
 
 </html>

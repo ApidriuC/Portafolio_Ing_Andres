@@ -253,6 +253,9 @@ textarea {
 	textarea {
 		font-size: 12pt;
 	}
+	#content-Lottie1{
+		display: none;
+	}
 
 }
 
@@ -4232,4 +4235,9 @@ button:hover,
 .enableExpandir{
 	
 	height: auto;
+}
+.content-NewDiv{
+	display: inline-block;
+	width: 100px !important;
+	height: 100px !important;
 }
