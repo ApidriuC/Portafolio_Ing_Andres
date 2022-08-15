@@ -10,4 +10,4 @@
 
 [GitHub Host](https://apidriuc.github.io/Portafolio_Ing_Andres/) 
 
-![Part 1](https://github.com/ApidriuC/Portafolio_Ing_Andres/blob/main/images/Captura.PNG)
+![Part 1](https://github.com/ApidriuC/Portafolio_Ing_Andres/blob/main/images/SS.PNG)
